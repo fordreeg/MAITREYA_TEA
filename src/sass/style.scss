@@ -1,4 +1,9 @@
-@import "fonts";
+@import "libs/normalize";
+@import "libs/fonts";
+@import "libs/slick";
+
+@import 'base/variables';
+@import 'base/mixins';
 
 .container {
     width: 1200px;
@@ -40,9 +45,9 @@
 
 @media (min-width: 1440px) {
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
     }
 }
 
-
-@import 'blocks/media';
+@import 'blocks/promo';
+@import 'base/media';
