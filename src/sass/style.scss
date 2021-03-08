@@ -1,0 +1,48 @@
+@import "fonts";
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 556px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 748px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1180px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+@import 'blocks/media';
