@@ -1,0 +1,90 @@
+@media (min-width: 320px) {
+    .side-panel {
+        display: none;
+    }
+    .header {
+        &__logo {
+            display: none;
+        }
+        &__lists {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .promo {
+        &__background {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .side-panel {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        &__link {
+            font-size: 15px;
+            margin-right: 35px;
+        }
+        &__logo {
+            display: block;
+        }
+        &__lists {
+            display: flex;
+        }
+    }
+    .promo {
+        &__item {
+            display: block;
+        }
+        &__background {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .side-panel {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        &__link {
+            font-size: 20px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
