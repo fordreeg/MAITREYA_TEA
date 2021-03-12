@@ -678,6 +678,31 @@
         </div>
     </section>
 
+    <section class="consultation">
+        <div class="container">
+            <h2 class="consultation__title">
+                Получите бесплатную консультацию
+                от чайного сомелье 
+            </h2>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text"> 
+                <input name="phone" placeholder="Ваш телефон"> 
+
+                <button class="consultation__button">заказать консультацию</button>
+            </form>
+        </div>
+        <div class="overlay">
+
+    
+            <div class="modal" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+                <div class="modal__descr">Наш менеджер свяжется с вами 
+                    в ближайшее время!</div>
+            </div>
+        </div>
+    </section>
+
     <section class="choice">
         <div class="container">
             <h2 class="choice__title">
@@ -699,9 +724,12 @@
             </div>
         </div>
     </section>
+
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
