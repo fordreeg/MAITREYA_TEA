@@ -8,15 +8,8 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <!-- СЛАЙДЕР
 
-    <div class="your-class">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div> -->
-
-    <section class="promo">
+    <section class="promo" id="promo">
         <header class="header">
             <nav>
                 <div class="container">
@@ -26,19 +19,19 @@
                         </div>
                         <ul class="header__lists">
                             <li class="header__list">
-                                <a href="#" class="header__link">Ассортимент</a>
+                                <a href="#catalog" class="header__link">Ассортимент</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">Выбор чая</a>
+                                <a href="#choice" class="header__link">Выбор чая</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">Консультация</a>
+                                <a href="#consultation" class="header__link">Консультация</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">О нас</a>
+                                <a href="#about" class="header__link">О нас</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">Контакты
+                                <a href="#footer" class="header__link">Контакты
                                 </a>
                             </li>
                         </ul>
@@ -82,7 +75,24 @@
                 </div>
             </nav>
         </header>
-        <aside class="side-panel">
+
+        <div class="subheader">
+            <div class="container">
+                <div class="subheader__social">
+                    <a href="tel:+380993459465" class="subheader__phone">
+                        0 99 345 94 65
+                    </a>
+                    <a href="tel:+380993459465" class="subheader__phone">
+                        0 99 345 94 65
+                    </a>
+                    <a href="#" class="icon-facebook subheader__icon"></a>
+                    <a href="#" class="icon-instagram subheader__icon"></a>
+                    <a href="#" class="icon-telegram subheader__icon"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <aside class="side-panel">
             <a href="#" class="icon-facebook side-panel__icon"></a>
             <a href="#" class="icon-instagram side-panel__icon"></a>
             <a href="#" class="icon-telegram side-panel__icon"></a>
@@ -92,7 +102,8 @@
                     Социальные сети
                 </span>
             </div>
-        </aside>
+        </aside> -->
+        
         <h1 class="promo__title">
             Lorem ipsum dolor 
         </h1>
@@ -102,7 +113,7 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="catalog__title">Lorem ipsum dolor</h2>
 
@@ -678,7 +689,7 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <h2 class="consultation__title">
                 Получите бесплатную консультацию
@@ -703,7 +714,7 @@
         </div>
     </section>
 
-    <section class="choice">
+    <section class="choice" id="choice">
         <div class="container">
             <h2 class="choice__title">
                 Lorem ipsum dolor
@@ -724,6 +735,49 @@
             </div>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about__title">
+                Lorem ipsum dolor sit
+            </h2>
+
+            <div class="about__descr">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic rem commodi quibusdam iure dolores quia totam quidem atque eum, temporibus libero neque recusandae aliquam dolore nisi! Adipisci omnis sed sunt!
+                Distinctio, illo earum ullam nesciunt cumque odit nemo, quae ducimus placeat voluptas eaque sapiente accusamus, veniam accusantium laboriosam laborum porro officia aut dolor? Officia dignissimos harum similique enim sapiente commodi. <br> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic rem commodi quibusdam iure dolores quia totam quidem atque eum, temporibus libero neque recusandae aliquam dolore nisi! Adipisci omnis sed sunt!
+                Distinctio, illo earum ullam nesciunt cumque odit nemo, quae ducimus placeat voluptas eaque sapiente accusamus, veniam accusantium laboriosam laborum porro officia aut dolor? Officia dignissimos harum similique enim sapiente commodi. <br> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic rem commodi quibusdam iure dolores quia totam quidem atque eum, temporibus libero neque recusandae aliquam dolore nisi! Adipisci omnis sed sunt!
+                Distinctio, illo earum ullam nesciunt cumque odit nemo, quae ducimus placeat voluptas eaque sapiente accusamus, veniam accusantium laboriosam laborum porro officia aut dolor? Officia dignissimos harum similique enim sapiente commodi. <br> <br>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.3893921102166!2d36.24620951511497!3d50.004569328897034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dcd174be4b%3A0x7bfd28514eca638f!2z0KLRg9GA0LjRgdGC0LjRh9C10YHQutC-0LUg0LDQs9C10L3RgdGC0LLQviAi0J_QvtC10YXQsNC70Lgg0YEg0L3QsNC80Lgi!5e0!3m2!1sru!2sua!4v1615587479929!5m2!1sru!2sua" style="border:0;" loading="lazy"></iframe>
+
+        <div class="footer__info">
+            <address class="footer__addr">
+                Lorem ipsum dolor sit amet consectetur 
+                <a class="footer__phone" href="tel:84999228974">
+                    8 (499) 922-89-74
+                </a>
+            </address>
+            <div class="footer__social">
+                <a href="#" class="icon-facebook footer__link"></a>
+                <a href="#" class="icon-instagram footer__link"></a>
+                <a href="#" class="icon-telegram footer__link"></a>
+            </div>
+            <div class="footer__logo">
+                <img src="img/logo.png" alt="logo" class="footer__img">
+            </div>
+        </div>
+
+        <div class="pageup">
+            <a href="#promo" class="icon-chevron_r pageup__icon"></a>
+        </div>
+        </a>
+    </footer>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
