@@ -1,7 +1,25 @@
 .catalog {
     padding: 60px 0;
     &__title {
+        position: relative;
+        padding: 10px;
+        background-color: #f6921e;
+        margin: 0 auto;
+        width: 70px;
         text-align: center;
+        color: #000;
+        &::after {
+            @extend %cub;
+            right: 76px;
+            top: 0px;
+            height: 47px;
+        }
+        &::before {
+            @extend %cub;
+            right: -13px;
+            top: 0px;
+            height: 47px;
+        }
     }
     &-header {
         margin-top: 40px;
@@ -52,7 +70,7 @@
         margin: 2.2% 2.2% 0 0;
         box-sizing: border-box;
         width: 275px;
-        height: 440px;
+        height: 510px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
@@ -140,7 +158,10 @@
             color: #0d0d0d;
             font-size: 14px;
             font-weight: 300;
-            text-align: justify;
+            text-align: left;
+            span {
+                text-align: right;
+            }
         }
         &__link {
             display: block;

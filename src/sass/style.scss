@@ -5,6 +5,10 @@
 @import 'base/variables';
 @import 'base/mixins';
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
     margin: 0;
 }
@@ -63,10 +67,8 @@ ul {
 
 @import 'blocks/promo';
 @import 'blocks/menu';
-@import 'blocks/slider';
 @import 'blocks/catalog';
 @import 'blocks/choice';
 @import 'blocks/consultation';
 @import 'blocks/about';
-@import 'blocks/footer';
 @import 'base/media';

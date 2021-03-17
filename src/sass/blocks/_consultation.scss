@@ -10,8 +10,8 @@
         position: absolute;
         top: 0;
         content: '';
-        background: url('../img/cover.jpg') center (center/cover) no-repeat;
-        filter: brightness(60%);
+        background: url('../img/bbb.png') center (center/cover) no-repeat;
+        filter: brightness(50%);
         z-index: -1;
     }
     &__descr {
@@ -104,6 +104,26 @@
         border: none;
         text-align: center;
         margin-bottom: 15px;
+    }
+}
+
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    border-radius: 100%;
+    &__icon {
+        display: block;
+        text-decoration: none;
+        transform: rotate(-90deg) translateX(-23%);
+        color: #fff;
+        font-weight: 900;
+        font-size: 20px;
     }
 }
 

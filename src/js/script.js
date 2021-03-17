@@ -12,44 +12,6 @@ $(document).ready(function(){
     menu.classList.remove('active');
     });
 
-    // Слайдер
-    // $(document).ready(function(){
-    //     $('.catalog__wrapper').slick({
-    //         infinite: true,
-    //         speed: 500,
-    //         slidesToShow: 3,
-    //         slidesToScroll: 1,
-    //         centerMode: true,
-    //         prevArrow: '<button type="button" class="slick-prev"><span class="icon-chevron_l"></span></button>',
-    //         nextArrow: '<button type="button" class="slick-next"><span class="icon-chevron_r"></span></button>',
-    //         // responsive: [
-    //         //     {
-    //         //       breakpoint: 1024,
-    //         //       settings: {
-    //         //         slidesToShow: 3,
-    //         //         slidesToScroll: 3,
-    //         //         infinite: true,
-    //         //         dots: true
-    //         //       }
-    //         //     },
-    //         //     {
-    //         //       breakpoint: 600,
-    //         //       settings: {
-    //         //         slidesToShow: 2,
-    //         //         slidesToScroll: 2
-    //         //       }
-    //         //     },
-    //         //     {
-    //         //       breakpoint: 480,
-    //         //       settings: {
-    //         //         slidesToShow: 1,
-    //         //         slidesToScroll: 1
-    //         //       }
-    //         //     }
-    //         // ]
-    //     });
-    // });
-
     // Слайдер внутри карточки товара
     function toggleSlide(item) {
         $(item).each(function(i) {
