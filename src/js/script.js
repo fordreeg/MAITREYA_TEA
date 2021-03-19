@@ -1,8 +1,8 @@
 $(document).ready(function(){
     // Гамбургер
     const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+          menu = document.querySelector('.menu'),
+          closeElem = document.querySelector('.menu__close');
 
     hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -13,24 +13,37 @@ $(document).ready(function(){
     });
 
     // Слайдер внутри карточки товара
-    function toggleSlide(item) {
-        $(item).each(function(i) {
-            $(this).on('click', function(e) {
-                e.preventDefault();
-                $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-                $('.catalog-item__block').eq(i).toggleClass('catalog-item__block_active');
-            });
-        });
-    }
-
-    toggleSlide('.catalog-item__link');
-    toggleSlide('.catalog-item__back');
+    
 
     // Табы 
     $('div.catalog-header').on('click', 'div:not(.catalog-header__btn_active)', function() {
         $(this)
         .addClass('catalog-header__btn_active').siblings().removeClass('catalog-header__btn_active')
         .closest('div.container').find('div.catalog__wrapper').removeClass('catalog__wrapper_active').eq($(this).index()).addClass('catalog__wrapper_active');
+    });
+
+    //Слайдер в табах
+    $(document).ready(function(){
+        $('.catalog__wrapper').slick({
+            prevArrow: '<button type="button" class="slick-prev"><span class="icon-chevron"></span></button>',
+            nextArrow: '<button type="button" class="slick-next"><span class="icon-chevron"></span></button>',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            variableWidth: true,
+        });
+
+        function toggleSlide(item) {
+            $(item).each(function(i) {
+                $(this).on('click', function(e) {
+                    e.preventDefault();
+                    $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+                    $('.catalog-item__block').eq(i).toggleClass('catalog-item__block_active');
+                });
+            });
+        }
+    
+        toggleSlide('.catalog-item__link');
+        toggleSlide('.catalog-item__back');
     });
 
     // Модальное окно
