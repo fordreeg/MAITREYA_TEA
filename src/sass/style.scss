@@ -6,7 +6,7 @@
 @import 'base/mixins';
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -71,4 +71,5 @@ ul {
 @import 'blocks/choice';
 @import 'blocks/consultation';
 @import 'blocks/about';
+@import 'blocks/contacts';
 @import 'base/media';

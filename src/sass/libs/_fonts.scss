@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?1ogf2b');
-  src:  url('../fonts/icomoon.eot?1ogf2b#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?1ogf2b') format('truetype'),
-    url('../fonts/icomoon.woff?1ogf2b') format('woff'),
-    url('../fonts/icomoon.svg?1ogf2b#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?2jt6aj');
+  src:  url('../fonts/icomoon.eot?2jt6aj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?2jt6aj') format('truetype'),
+    url('../fonts/icomoon.woff?2jt6aj') format('woff'),
+    url('../fonts/icomoon.svg?2jt6aj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,10 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron_l:before {
+.icon-chevron:before {
+  content: "\e905";
+}
+.icon-call:before {
   content: "\e900";
 }
-.icon-chevron_r:before {
+.icon-email:before {
   content: "\e901";
 }
 .icon-facebook:before {

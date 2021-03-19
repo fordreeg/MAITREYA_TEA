@@ -1,6 +1,6 @@
 .header {
     height: 50px;
-    background-color: #212121;
+    background-color: #28282d;
     position: fixed;
     z-index: 2;
     width: 100vw;
@@ -29,13 +29,17 @@
     }
     &__link {
         margin-right: 40px;
-        @include font (Arial, 20, 500, #fff);
+        @include font (20, 500, #fff);
         text-decoration: none;
+        transition: all .3s;
+        &:hover {
+            color: #f6921e;
+        }
     }
 }
 .subheader {
     height: 50px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(40, 40, 45, .5);
     position: absolute;
     top: 50px;
     width: 100%;
@@ -68,6 +72,10 @@
             }
         }
     }
+    &__call-icon {
+        margin-right: 5px;
+        @include font (16, 600, #fff);
+    }
     &__wrapper {
         display: flex;
         align-items: center;
@@ -77,8 +85,11 @@
         margin-right: 30px;
         display: block;
         text-decoration: none;
-        color: #fff;
-        font-size: 18px;
+        @include font (18, 600, #fff);
+        transition: all .3s;
+        &:hover {
+            color: #f6921e;
+        }
     }
 }
 
@@ -114,7 +125,7 @@
         text-align: center;
         width: 100%;
         z-index: 0;
-        @include font (Arial, 40, 600, #fff);
+        @include font (40, 600, #fff);
         text-transform: uppercase;
     }
 }
