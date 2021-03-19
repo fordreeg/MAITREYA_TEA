@@ -215,6 +215,9 @@
                 background-color: #869f3f;
                 color: #fff;
             }
+            &:focus {
+                outline: none;
+            }
         }
         &__dropdown {
             padding: 4px;

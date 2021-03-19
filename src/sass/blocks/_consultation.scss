@@ -36,6 +36,7 @@
         @include font (25, 600, #fff);
     }
     &__button {
+        margin-top: 20px;
         padding: 15px;
         @include font (17, 600, #fff);
         background-color: #28282d;
@@ -73,6 +74,23 @@
             &:nth-child(2) {
                 color: #2399d6;
             }
+        }
+    }
+    &__policy {
+        width: 350px;
+        height: 20px;
+        @include font (12, 500, #fff);
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-top: 15px;
+            margin-right: 10px;
+            width: 15px;
+        }
+        &-link {
+            font-size: 13px;
+            color: #fff;
         }
     }
 }
