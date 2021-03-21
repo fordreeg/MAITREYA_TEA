@@ -30,6 +30,7 @@
                 color: rgba(0, 0, 0, 1);
                 border-bottom: 5px solid #869f3f;
                 border-radius: 100%;
+                animation: fade 1s;
             }
         }
     }
@@ -38,8 +39,10 @@
         display: none;
         flex-flow: wrap;
         width: 100%;
+        transition: display 1s;
         &_active {
             display: flex;
+            animation: fade 1s;
         }
     }
     &-item {
@@ -302,3 +305,12 @@
     border: 2px solid black;
     padding: 10px;
 }
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+};
