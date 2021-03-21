@@ -8,7 +8,7 @@ $(document).ready(function(){
     menu.classList.add('active');
     });
 
-    closeElem.addEventListener('click', () => {
+    menu.addEventListener('click', () => {
     menu.classList.remove('active');
     });
 
@@ -30,6 +30,63 @@ $(document).ready(function(){
             slidesToShow: 4,
             slidesToScroll: 1,
             variableWidth: true,
+            mobileFirst: true,
+            responsive: [
+                  {
+                    breakpoint: 319,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      centerMode: true,
+                      arrows: false,
+                      dots: true,
+                      initialSlide: 1,
+                      centerMode: true,
+                    }
+                  },
+                  {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                        arrows: false,
+                        dots: true,
+                        initialSlide: 1,
+                        centerMode: true,
+                    }
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        centerMode: true,
+                        arrows: false,
+                        dots: true,
+                        initialSlide: 1,
+                        centerMode: false,
+                    }
+                  },
+                  {
+                    breakpoint: 992,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2,
+                      infinite: true,
+                      dots: false,
+                    }
+                  },
+                  {
+                    breakpoint: 1200,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: false,
+                    }
+                  },
+            ]
         });
 
         function toggleSlide(item) {
@@ -44,6 +101,8 @@ $(document).ready(function(){
     
         toggleSlide('.catalog-item__link');
         toggleSlide('.catalog-item__back');
+
+        $('.catalog__wrapper').slick('setPosition');
     });
 
     // Модальное окно
@@ -55,7 +114,7 @@ $(document).ready(function(){
     });
 
     // Валидация формы
-    function validateForms(form){
+    function validateForms(form) {
         $(form).validate({
             rules: {
                 name: {
@@ -63,6 +122,9 @@ $(document).ready(function(){
                     minlength: 2
                 },
                 phone: "required",
+                checkbox: {
+                    required: true
+                },
             },
             messages: {
                 name: {
@@ -70,6 +132,9 @@ $(document).ready(function(){
                     minlength: jQuery.validator.format("Введите {0} символа!")
                   },
                 phone: "Пожалуйста, введите свой номер телефона",
+                checkbox: {
+                    required: "Пожалуйста, подтвердите что вы согласны с политикой конфиденциальности",
+                },
             }
         });
     };
@@ -88,7 +153,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation, #order').fadeOut();
+            $('#consultation__button, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
 
             $('form').trigger('reset');

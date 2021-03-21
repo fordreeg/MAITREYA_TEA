@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    padding: 60px;
+    padding: 60px 0;
     &__title {
         position: relative;
         text-align: center;
@@ -27,6 +27,7 @@
         line-height: 25px;
         font-size: 17px;
         text-align: justify;
+        width: 400px;
     }
     &__pic {
         margin: 0 auto;
@@ -60,9 +61,6 @@
             z-index: -1;
             border-radius: 5px;
         }
-    }
-    &__descr {
-        width: 400px;
     }
     &__map {
         display: block;

@@ -27,7 +27,6 @@
             cursor: pointer;
             transition: color .3s, border-radius .3s;
             &_active {
-                padding-bottom: 10px;
                 color: rgba(0, 0, 0, 1);
                 border-bottom: 5px solid #869f3f;
                 border-radius: 100%;
@@ -55,7 +54,7 @@
         overflow: hidden;
         transition: all .2s;
         &:hover {
-            box-shadow: 0 0 25px -10px black;
+            box-shadow: 10px 10px 20px -10px black;
         }
         &:focus {
             outline: none;
@@ -141,9 +140,23 @@
         }
         &__img {
             display: block;
+            position: relative;
             margin: 0 auto;
             max-width: 100%;
             height: 150px;
+            &-back {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform:translateX(-50%);
+                max-width: 100%;
+                height: 150px;
+                opacity: 0;
+                transition: opacity .4s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
         &__subtitle {
             margin-top: 15px;
@@ -265,4 +278,27 @@
 }
 .slick-list {
     height: 530px;
+}
+.slick-dots {
+    margin: 0 auto;
+    transform: translateX(-12%);
+    text-align: center;
+    display: flex !important; // поставить кнопки в ряд
+    justify-content: center; // выровнять по центру
+    list-style: none; // убираем черные маркеры
+}
+.slick-dots button {
+    background: rgba(0, 0, 0, .3); // цвет фона
+    border: none; // без рамки
+    border-radius: 50%; // радиус закругления
+    height: 15px; // высота точки
+    width: 15px; // ширина точки
+    margin: 5px; // отступы между точками
+    outline: none; // убираем обводку
+    font-size: 0;
+}
+.slick-dots li[class="slick-active"] button {
+    background: #fff;
+    border: 2px solid black;
+    padding: 10px;
 }

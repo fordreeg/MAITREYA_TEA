@@ -121,9 +121,9 @@
     &__title {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
         text-align: center;
-        width: 100%;
         z-index: 0;
         @include font (40, 600, #fff);
         text-transform: uppercase;

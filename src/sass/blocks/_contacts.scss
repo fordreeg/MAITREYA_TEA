@@ -86,3 +86,23 @@
         @include font (18, 400);
     }
 }
+
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    border-radius: 100%;
+    &__icon {
+        display: block;
+        text-decoration: none;
+        transform: translateY(40%);
+        color: #fff;
+        font-weight: 900;
+        font-size: 20px;
+    }
+}
