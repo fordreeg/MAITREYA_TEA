@@ -6,10 +6,12 @@ $(document).ready(function(){
 
     hamburger.addEventListener('click', () => {
     menu.classList.add('active');
+    document.body.style.overflow = 'hidden';
     });
 
     menu.addEventListener('click', () => {
     menu.classList.remove('active');
+    document.body.style.overflow = '';
     });
 
     // Табы 
@@ -104,6 +106,7 @@ $(document).ready(function(){
     //Модальное окно
     $('.modal__close').on('click', function() {
         $('.overlay, #thanks').fadeOut('slow');
+        document.body.style.overflow = '';
     });
 
 
@@ -142,6 +145,9 @@ $(document).ready(function(){
     // PHP mailer
     $('form').submit(function(e) {
         e.preventDefault();
+        if (!$(this).valid()) {
+            return;
+            }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -149,7 +155,7 @@ $(document).ready(function(){
         }).done(function() {
             $(this).find("input").val("");
             $('.overlay, #thanks').fadeIn('slow');
-
+            document.body.style.overflow = 'hidden';
             $('form').trigger('reset');
         });
         return false;
