@@ -101,13 +101,11 @@ $(document).ready(function(){
         toggleSlide('.catalog-item__back');
     });
 
-    // Модальное окно
-    $('[data-modal=thanks]').on('click', function() {
-        $('.overlay, #thanks').fadeIn('slow');
-    });
+    //Модальное окно
     $('.modal__close').on('click', function() {
         $('.overlay, #thanks').fadeOut('slow');
     });
+
 
     // Валидация формы
     function validateForms(form) {
@@ -136,6 +134,7 @@ $(document).ready(function(){
     };
 
     validateForms('#consultation-form');
+   
 
     // Маска для номера тлф
     $('input[name=phone]').mask("+380 (99) 999-99-99");
@@ -149,7 +148,6 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation__button, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
 
             $('form').trigger('reset');
