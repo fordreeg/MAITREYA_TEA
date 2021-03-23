@@ -1,7 +1,7 @@
 .consultation {
     position: relative;
     min-height: 300px;
-    padding: 100px 0 92px 0;
+    padding: 50px 0 50px 0;
     z-index: 1;
     &::after {
         display: block;
@@ -28,14 +28,15 @@
         border: none;
         text-align: center;
         margin-bottom: 15px;
+        font-size: 13px;
     }
     &__title {
         display: block;
         line-height: 30px;
-        @include font (25, 600, #fff);
+        @include font (20, 600, #fff);
     }
     &__button {
-        padding: 15px;
+        padding: 10px;
         @include font (17, 600, #fff);
         background-color: #28282d;
         border-radius: 5px;
@@ -53,8 +54,8 @@
         }
     }
     &__callback {
-        margin-top: 40px;
-        @include font (21, 400, #fff);
+        margin-top: 60px;
+        @include font (18, 400, #fff);
         text-decoration: underline;
     }
     &__social {
@@ -82,6 +83,7 @@
         line-height: 18px;
         display: flex;
         align-items: center;
+        width: 300px;
         input {
             display: block;
             margin-top: 10px;
@@ -94,24 +96,25 @@
         }
         #checkbox-error {
             position: absolute;
-            font-size: 14px;
+            font-size: 13px;
+            top: 35px;
         }
     }
 }
 .feed-form {
-    margin-top: 36px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 290px;
     input {
-        height: 50px;
+        height: 45px;
         border-radius: 5px;
         background-color: #ffffff;
         margin-bottom: 15px;
         border: none;
         padding: 0 20px;
         color: #4b4b4b;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 300;
         &:nth-child(2) {
             margin-bottom: 20px;
@@ -144,30 +147,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    height: 140px;
+    width: 225px;
+    height: 130px;
     background-color: #f2f2f2;
-    padding: 38px 40px 40px 40px;
+    padding: 15px 15px 15px 15px;
     &__close {
         position: absolute;
-        top: 0;
-        right: -40px;
+        top: -40px;
+        right: -13px;
         font-size: 41px;
         line-height: 21px;
         color: red;
         cursor: pointer;
     }
     &__subtitle {
-        margin-top: 20px;
+        margin-top: 10px;
         color: #0d0d0d;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 700;
         text-align: center;
     }
     &__descr {
         margin-top: 20px;
         color: #0d0d0d;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 500;
         text-align: center;
     }

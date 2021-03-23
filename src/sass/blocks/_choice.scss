@@ -1,5 +1,5 @@
 .choice {
-    padding: 60px 0;
+    padding: 20px 0;
     position: relative;
     &__header {
         text-align: center; 
@@ -8,33 +8,38 @@
     &__title {
         position: relative;
         text-align: center;
-        margin-bottom: 100px;
-        @include font (35, 600);
+        margin-bottom: 0px;
+        @include font (20, 600);
         &::after {
             @extend %cub;
-            right: 31%;
+            right: 8%;
+            width: 30px;
         }
         &::before {
             @extend %cub;
-            left: 31%;
+            left: 8%;
+            width: 30px;
         }
     }
     &__wrapper {
-        margin: 100px auto 0;
+        margin: 40px auto 0;
         display: flex;
         max-width: 1000px;
         justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        order: 1;
         max-width: 450px;
     }
     &__descr {
         margin-top: 30px;
-        @include font (17, 400);
+        @include font (13, 400);
         line-height: 25px;
     }
     &__pic {
@@ -47,8 +52,10 @@
         }
     }
     &__img {
+        order: 2;
+        margin-top: 40px;
         position: relative;
-        max-width: 450px;
+        max-width: 250px;
         max-height: 250px;
         img {
             width: 100%;

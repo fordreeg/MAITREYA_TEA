@@ -10,17 +10,18 @@
         position: relative;
     }
     &__logo {
+        display: none;
         position: relative;
         z-index: 2;
-        width: 120px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         &-img {
             width: 100%;
             height: 100%;
         }
     }
     &__lists {
-        display: flex;
+        display: none;
         margin: 15px 0 0 0;
         justify-content: flex-end;
         width: 100%;
@@ -45,7 +46,7 @@
     width: 100%;
     z-index: 1;
     &__social {
-        padding-right: 35px;
+        padding-right: 10px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -54,6 +55,7 @@
         height: 50px;
     }
     &__icon {
+        display: none;
         margin-left: 30px;
         text-decoration: none;
         color: white;
@@ -74,7 +76,7 @@
     }
     &__call-icon {
         margin-right: 5px;
-        @include font (16, 600, #fff);
+        @include font (14, 600, #fff);
     }
     &__wrapper {
         display: flex;
@@ -82,10 +84,10 @@
         margin-right: 40px;
     }
     &__phone {
-        margin-right: 30px;
+        margin: 0 0 0 20px;
         display: block;
         text-decoration: none;
-        @include font (18, 600, #fff);
+        @include font (14, 600, #fff);
         transition: all .3s;
         &:hover {
             color: #f6921e;
@@ -125,7 +127,7 @@
         transform: translateY(-50%) translateX(50%);
         text-align: center;
         z-index: 0;
-        @include font (40, 600, #fff);
+        @include font (35, 600, #fff);
         text-transform: uppercase;
     }
 }

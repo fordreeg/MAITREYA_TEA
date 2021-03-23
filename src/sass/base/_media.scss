@@ -1,223 +1,3 @@
-@media (min-width: 320px) {
-    .header {
-        &__logo {
-            display: none;
-            width: 50px;
-            height: 50px;
-        }
-        &__lists {
-            display: none;
-        }
-    }
-    .modal {
-        padding: 15px 15px 15px 15px;
-        width: 225px;
-        height: 130px;
-        &__subtitle {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-        &__descr {
-            font-size: 16px;
-        }
-        &__close {
-            top: -40px;
-            right: -13px;
-        }
-    }
-    .subheader {
-        &__social{
-            padding-right: 10px;
-            justify-content: flex-end;
-        }
-        &__phone {
-            font-size: 14px;
-            margin-right: 0;
-            margin-left: 20px;
-        }
-        &__call-icon {
-            font-size: 14px;
-        }
-        &__icon {
-            display: none;
-        }
-    }
-    .promo {
-        &__title {
-            font-size: 35px;
-        }
-    }
-    .catalog {
-        padding: 35px 0;
-        &__title {
-            font-size: 33px;
-            &::before {
-                left: 25%;
-                width: 30px;
-            }
-            &::after {
-                right: 25%;
-                width: 30px;
-            }
-        }
-        &__wrapper {
-            margin-top: 10px;
-        }
-        &-header {
-            margin-top: 30px;
-            &__btn {
-                margin-right: 15px;
-                padding: 0px 10px 10px 10px;
-                font-size: 14px;
-            }
-        }
-    }
-    .about {
-        padding: 20px 0;
-        &__title {
-            font-size: 33px;
-            &::before {
-                left: 21%;
-                width: 30px;
-            }
-            &::after {
-                right: 21%;
-                width: 30px;
-            }
-        }
-        &__wrapper {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 65px;
-        }
-        &__pic {
-            margin-top: 40px;
-        }
-        &__img {
-            max-width: 250px;
-            height: 260px;
-        }
-        &__descr {
-            width: 300px;
-            font-size: 14px;
-        }
-    }
-    .choice {
-        padding: 20px 0;
-        &__title {
-            font-size: 20px;
-            margin-bottom: 0;
-            &::before {
-                left: 8%;
-                width: 30px;
-            }
-            &::after {
-                right: 8%;
-                width: 30px;
-            }
-        }
-        &__wrapper {
-            margin-top: 40px;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__img {
-            order: 2;
-            margin-top: 40px;
-            max-width: 250px;
-        }
-        &__descr {
-            font-size: 13px;
-        }
-        &__text {
-            order: 1;
-        }
-    }
-    .consultation {
-        padding: 50px 0 50px 0;
-        &__title {
-            font-size: 20px;
-        }
-        .feed-form {
-            margin-top: 20px;
-            width: 290px;
-            input {
-                height: 45px;
-                margin-bottom: 10px;
-            }
-        }
-        &__callback {
-            margin-top: 60px;
-            font-size: 18px;
-        }
-        &__policy {
-            width: 300px;
-        }
-        label.error {
-            font-size: 13px;
-        }
-        #checkbox-error {
-            top: 35px;
-            font-size: 13px;
-        }
-        &__button {
-            padding: 10px;
-        }
-    }
-    .contacts {
-        padding: 40px 0 10px 0;
-        &__title {
-            font-size: 20px;
-            &::before {
-                left: 7%;
-                width: 30px;
-            }
-            &::after {
-                right: 7%;
-                width: 30px;
-            }
-        }
-        &__wrapper {
-            flex-direction: column;
-            margin-top: 40px;
-        }
-        &__item {
-            width: 100%;
-            &:nth-child(2) {
-                margin-top: 30px;
-            }
-        }
-        &__subheader {
-            font-size: 17px;
-        }
-        &__divider {
-            margin: 5px 0 20px 0;
-        }
-        &__soc-icon {
-            font-size: 13px;
-        }
-        &__phone {
-            font-size: 16px;
-        }
-        &__mail {
-            font-size: 16px;
-        }
-        &__social {
-            margin-top: 25px;
-        }
-        &__icon {
-            margin-right: 15px;
-            font-size: 25px;
-        }
-        &__addr {
-            font-size: 15px;
-        }
-        .pageup {
-            opacity: 0;
-        }
-    }
-}
-
 @media (min-width: 576px) {
     .header__logo {
         display: block;
@@ -330,11 +110,11 @@
         &__title {
             font-size: 26px;
             &::before {
-                left: 20%;
+                left: 25%;
                 width: 35px;
             }
             &::after {
-                right: 20%;
+                right: 25%;
                 width: 35px;
             }
         }
@@ -589,11 +369,11 @@
             font-size: 35px;
             &::before {
                 width: 50px;
-                left: 24%;
+                left: 27%;
             }
             &::after {
                 width: 50px;
-                right: 24%;
+                right: 27%;
             }
         }
         &__wrapper {
