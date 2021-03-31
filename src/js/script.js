@@ -80,6 +80,7 @@ $(document).ready(function(){
                   {
                     breakpoint: 1200,
                     settings: {
+                      swipe: false,
                       slidesToShow: 3,
                       slidesToScroll: 1,
                       infinite: false,
@@ -176,4 +177,7 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+    //Библиотека анимаций
+    new WOW().init();
 });

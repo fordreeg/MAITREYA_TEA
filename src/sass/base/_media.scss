@@ -7,7 +7,8 @@
             display: flex;
         }
         &__social {
-            width: 500px;
+            padding-right: 25px;
+            width: 499px;
             transform: translateX(5.9%);
         }
     }
@@ -200,6 +201,7 @@
             display: flex;
         }
         &__social {
+            padding-right: 35px;
             width: 680px;
             transform: translateX(0%);
         }
@@ -343,7 +345,7 @@
     }
     .subheader {
         &__social {
-            padding-right: 35px;
+            padding-right: 40px;
             width: 850px;
             transform: translateX(0%);
         }
@@ -565,6 +567,7 @@
 @media (min-width: 1200px) {
     .subheader {
         &__social {
+            padding-right: 90px;
             width: 110.8%;
             transform: translateX(-4.9%);
         }
@@ -670,6 +673,7 @@
     }
     .subheader {
         &__social {
+            padding-right: 150px;
             width: 1399px;
             transform: translateX(-7.8%);
         }
@@ -719,8 +723,13 @@
     .contacts {
         &__title {
             line-height: 20px;
+            &::before {
+                left: 33%;
+            }
+            &::after {
+                right: 33%;
+            }
         }
-
     }
     .consultation {
         &__wrapper {
