@@ -1,38 +1,51 @@
 .catalog {
     padding: 35px 0;
     &__title {
+        margin-top: 70px;
         position: relative;
         display: block;
         padding: 10px;
         text-align: center;
-        @include font (33, 600);
+        @include font (33, 600, #fff);
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
         &::after {
             @extend %cub;
-            right: 25%;
-            width: 30px;
+            right: 28%;
         }
         &::before {
             @extend %cub;
-            left: 25%;
-            width: 30px;
+            left: 28%;
         }
     }
     &-header {
+        position: relative;
         margin-top: 30px;
         display: flex;
         justify-content: flex-start;
+        z-index: 1;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
         &__btn {
             margin-right: 15px;
             display: inline-block;
             padding: 0px 10px 10px 10px;
-            @include font (14, 600, rgba(0, 0, 0, .3));
+            @include font (14, 600, #fff);
             cursor: pointer;
             transition: color .3s, border-radius .3s;
             &_active {
-                color: rgba(0, 0, 0, 1);
-                border-bottom: 5px solid #869f3f;
+                color: #fff;
+                border-bottom: 5px solid #fff;
                 border-radius: 100%;
                 animation: fade 1s;
+                box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+            }
+            &:hover {
+                color: #f6921e;
             }
         }
     }
@@ -58,6 +71,7 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         transition: all .2s;
+        background-color: rgba(255, 255, 255, 1);
         &:hover {
             box-shadow: 10px 10px 10px -10px black;
         }
@@ -73,6 +87,7 @@
             transform: translateX(-110%);
             transition: 0.5s all;
             text-align: center;
+            height: 344px;
             &_active {
                 transform: translateX(0%);
                 margin-right: 0;
@@ -110,13 +125,16 @@
                     top: 0px;
                 }
                 &:nth-child(1) {
-                    text-align: justify;
+                    text-align: left;
                     margin-bottom: 15px;
                     padding-left: 10px;
                     &:before {
                         display: none;
                     }
                 }
+            }
+            &_bold {
+                font-weight: 700;
             }
         }
         &__back {
@@ -157,7 +175,7 @@
                 max-width: 100%;
                 height: 150px;
                 opacity: 0;
-                transition: opacity .4s;
+                transition: opacity .3s;
                 &:hover {
                     opacity: 1;
                 }
@@ -170,14 +188,18 @@
         }
         &__descr {
             width: 230px;
+            height: 100px;
             margin: 10px auto 0;
             @include font (13, 400);
             line-height: 20px;
-            text-align: justify;
+            text-align: center;
         }
         &__link {
             display: inline-block;
-            margin-top: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             padding: 5px 20px;
             @include font (12, 500);
             text-decoration: underline;
@@ -241,9 +263,9 @@
             padding: 4px;
             display: flex;
             align-items: flex-end;
-            width: 120px;
+            width: 125px;
             border-radius: 5px;
-            @include font (14, 600);
+            @include font (12, 600);
             &:focus {
                 outline: none;
             }

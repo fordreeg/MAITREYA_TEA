@@ -30,6 +30,7 @@ $(document).ready(function(){
             slidesToScroll: 1,
             variableWidth: true,
             mobileFirst: true,
+            infinite: false,
             responsive: [
                   {
                     breakpoint: 319,
@@ -72,7 +73,7 @@ $(document).ready(function(){
                     settings: {
                       slidesToShow: 2,
                       slidesToScroll: 2,
-                      infinite: true,
+                      infinite: false,
                       dots: false,
                     }
                   },
@@ -81,7 +82,7 @@ $(document).ready(function(){
                     settings: {
                       slidesToShow: 3,
                       slidesToScroll: 1,
-                      infinite: true,
+                      infinite: false,
                       dots: false,
                     }
                   },

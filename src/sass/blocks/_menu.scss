@@ -37,6 +37,9 @@
         font-size: 35px;
         margin-right: 35px;
         transition: transform .5s;
+        &:hover {
+            color: #f6921e;
+        }
     }
     &__block {
         position: relative;
@@ -75,6 +78,9 @@
         transition: transform .3s, color .4s;
         text-decoration: none;
         font-size: 25px;
+        &:hover {
+            color: #f6921e;
+        }
     }
     &__social {
         position: absolute;

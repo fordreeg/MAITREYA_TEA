@@ -9,16 +9,17 @@
         position: relative;
         text-align: center;
         margin-bottom: 0px;
-        @include font (20, 600);
+        @include font (27, 600, #fff);
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
         &::after {
             @extend %cub;
-            right: 8%;
-            width: 30px;
+            right: 6%;
         }
         &::before {
             @extend %cub;
-            left: 8%;
-            width: 30px;
+            left: 6%;
         }
     }
     &__wrapper {
@@ -36,11 +37,22 @@
         justify-content: center;
         order: 1;
         max-width: 450px;
+        text-align: center;
     }
     &__descr {
         margin-top: 30px;
-        @include font (13, 400);
+        @include font (13, 400, #fff);
         line-height: 25px;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    }
+    &__underline {
+        text-decoration: underline;
+    }
+    &__style {
+        display: block;
+        text-align: center;
     }
     &__pic {
         width: 60px;
@@ -57,18 +69,20 @@
         position: relative;
         max-width: 250px;
         max-height: 250px;
+        z-index: 1;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 5px
+            border-radius: 100%;
+            z-index: 1;
         }
         &::before {
-            border-radius: 5px;
+            border-radius: 100%;
             position: absolute;
             content: '';
             display: block;
-            background-color: rgba(134, 159, 63, .8);
+            background-color: rgba(0, 0, 0, .5);
             bottom: 20px;
             left: 20px;
             width: 100%;

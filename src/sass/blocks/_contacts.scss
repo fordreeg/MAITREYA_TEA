@@ -1,19 +1,20 @@
 .contacts {
-    padding: 40px 0 10px 0;
+    position: relative;
+    padding: 0 0 10px 0;
     min-height: 500px;
+    z-index: 1;
     &__title {
         text-align: center;
         position: relative;
-        @include font (20, 600);
+        @include font (25, 600, #fff);
+        text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
         &::after {
             @extend %cub;
-            right: 7%;
-            width: 30px;
+            right: 0%;
         }
         &::before {
             @extend %cub;
-            left: 7%;
-            width: 30px;
+            left: 0%;
         }
     }
     &__wrapper {
@@ -30,22 +31,23 @@
     }
     &__subheader {
         text-transform: uppercase;
-        @include font (17, 600);
+        @include font (17, 600, #fff);
+        text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
     }
     &__divider {
         margin: 5px 0 20px 0;
         width: 100%;
         height: 2px;
-        background-color: rgba(40, 40, 45, .5);
+        background-color: rgba(255, 255, 255, .4);
     }
     &__phone {
         margin-top: 10px;
         display: block;
         text-decoration: none;
-        @include font (13, 600);
+        @include font (15, 600, #fff);
         transition: all .2s;
         &:hover {
-            color: #869f3f;
+            color: #f6921e;
         }
     }
     &__soc-icon {
@@ -56,10 +58,10 @@
         margin-top: 15px;
         display: block;
         text-decoration: none;
-        @include font (16, 600);
+        @include font (16, 600, #fff);
         transition: all .2s;
         &:hover {
-            color: #869f3f;
+            color: #f6921e;
         }
     }
     &__social {
@@ -68,18 +70,10 @@
     &__icon {
         margin-right: 15px;
         text-decoration: none;
-        @include font (25, 600);
+        @include font (25, 300, #fff );
         transition: all .3s;
         &:hover {
-            &:nth-child(1) {
-                color: #3b5998;
-            }
-            &:nth-child(2) {
-                color: #e8456a;
-            }
-            &:nth-child(3) {
-                color: #2399d6;
-            }
+            color: #f6921e;
         }
     }
     &__map {
@@ -89,7 +83,7 @@
         height: 300px;
     }
     &__addr {
-        @include font (15, 400);
+        @include font (15, 600, #fff);
     }
 }
 
@@ -104,6 +98,7 @@
     text-align: center;
     border-radius: 100%;
     opacity: 0;
+    z-index: 2;
     &__icon {
         display: block;
         text-decoration: none;
@@ -111,5 +106,11 @@
         color: #fff;
         font-weight: 900;
         font-size: 20px;
+    }
+    &:hover {
+        background-color: #fff;
+    }
+    &:hover .pageup__icon {
+        color: #000;
     }
 }
