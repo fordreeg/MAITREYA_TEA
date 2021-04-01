@@ -180,10 +180,10 @@ $(document).ready(function(){
     });
 
     //Библиотека анимаций
-    wow = new WOW(
+    let wow = new WOW(
         {
-        mobile: false,       // default
-      }
-      )
-    new WOW().init();
+            mobile: false      // default
+        }
+      );
+    wow.init();
 });
