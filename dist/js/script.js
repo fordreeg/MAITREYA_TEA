@@ -14,6 +14,7 @@ $(document).ready(function(){
     document.body.style.overflow = '';
     });
 
+
     // Табы 
     $('div.catalog-header').on('click', 'div:not(.catalog-header__btn_active)', function() {
         $(this)
@@ -107,7 +108,7 @@ $(document).ready(function(){
 
     //Модальное окно
     $('.modal__close').on('click', function() {
-        $('.overlay, #thanks').fadeOut('slow');
+        $('.modal').fadeOut('slow');
         document.body.style.overflow = '';
     });
 
@@ -156,7 +157,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('.overlay, #thanks').fadeIn('slow');
+            $('.modal').fadeIn('slow');
             document.body.style.overflow = 'hidden';
             $('form').trigger('reset');
         });
@@ -179,5 +180,10 @@ $(document).ready(function(){
     });
 
     //Библиотека анимаций
+    wow = new WOW(
+        {
+        mobile: false,       // default
+      }
+      )
     new WOW().init();
 });

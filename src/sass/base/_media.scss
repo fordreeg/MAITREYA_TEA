@@ -22,18 +22,18 @@
     }
     .modal {
         padding: 40px 40px 40px 40px;
-        width: 300px;
-        height: 140px;
+        width: 345px;
+        height: 175px;
         &__subtitle {
-            margin-top: 10px;
+            margin-top: 35px;
             font-size: 24px;
         }
         &__descr {
             font-size: 16px;
         }
         &__close {
-            top: 0px;
-            right: -40px;
+            top: 5px;
+            right: 5px;
         }
     }
     .catalog {
@@ -224,6 +224,17 @@
         &__mes {
             margin-left: 0;
         }
+        .modal {
+            width: 345px;
+            height: 175px;
+            &__subtitle {
+                margin-top: 30px;
+                font-size: 29px;
+            }
+            &__descr {
+                font-size: 17px;
+            }
+        }
     }
     .header {
         &__link {
@@ -232,7 +243,11 @@
         }
         &__logo {
             display: block;
-        }
+            width: 100px;
+            height: 85px;
+            position: relative;
+            left: -40px;
+        }    
         &__lists {
             display: flex;
         }
@@ -339,8 +354,10 @@
             margin-right: 40px;
         }
         &__logo {
-            width: 120px;
-            height: 100px;
+            width: 100px;
+            height: 85px;
+            position: relative;
+            left: -41px;
         }
     }
     .subheader {
@@ -512,6 +529,17 @@
             top: 25px;
             font-size: 14px;
         }
+        .modal {
+            width: 450px;
+            height: 250px;
+            &__subtitle {
+                margin-top: 80px;
+                font-size: 29px;
+            }
+            &__descr {
+                font-size: 17px;
+            }
+        }
     }
     .contacts {
         padding: 20px 0 10px 0;
@@ -574,6 +602,12 @@
     }
     .hamburger {
         display: none;
+    }
+    .header {
+        &__logo {
+            position: relative;
+            left: -100px;
+        }
     }
     .menu {
         display: none;
@@ -644,6 +678,17 @@
         &__divider {
             width: 950px;
         }
+        .modal {
+            width: 550px;
+            height: 300px;
+            &__subtitle {
+                margin-top: 90px;
+                font-size: 32px;
+            }
+            &__descr {
+                font-size: 20px;
+            }
+        }
     }
     .pageup {
         right: 15px;
@@ -676,6 +721,12 @@
             padding-right: 150px;
             width: 1399px;
             transform: translateX(-7.8%);
+        }
+    }
+    .header {
+        &__logo {
+            position: relative;
+            left: -105px;
         }
     }
     .menu {
@@ -740,6 +791,17 @@
         }
         &__divider {
             width: 1180px;
+        }
+        .modal {
+            width: 650px;
+            height: 350px;
+            &__subtitle {
+                margin-top: 110px;
+                font-size: 32px;
+            }
+            &__descr {
+                font-size: 22px;
+            }
         }
     }
 }
