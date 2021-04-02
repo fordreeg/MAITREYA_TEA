@@ -27,6 +27,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Facebook Pixel Code -->
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '747863796099873');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=747863796099873&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
 
@@ -119,6 +137,7 @@
 
     <section class="catalog" id="catalog">
         <div class="container">
+
             <h2 class="catalog__title">Чай</h2>
 
             <div class="catalog-header">
@@ -1524,7 +1543,7 @@
             </h2>
             
             <div class="choice__wrap">
-                <div class="choice__wrapper animate__animated wow animate__slideInRight" data-wow-duration="1s" data-wow-offset="200">
+                <div class="choice__wrapper">
 
                     <div class="choice__text">
                         <div class="choice__pic">
@@ -1540,7 +1559,7 @@
                     </div>
                 </div>
     
-                <div class="choice__wrapper animate__animated wow animate__slideInLeft" data-wow-offset="200" data-wow-duration="1s">
+                <div class="choice__wrapper">
     
                     <div class="choice__img choice__img_left">
                         <img src="img/bbb.png" alt="">
@@ -1560,7 +1579,7 @@
                     </div> 
                 </div>
     
-                <div class="choice__wrapper animate__animated wow animate__slideInRight" data-wow-duration="1s" data-wow-offset="200">
+                <div class="choice__wrapper ">
     
                     <div class="choice__text">
                         <div class="choice__pic">
@@ -1581,7 +1600,7 @@
                     </div>
                 </div>
     
-                <div class="choice__wrapper animate__animated wow animate__slideInLeft" data-wow-offset="200" data-wow-duration="1s">
+                <div class="choice__wrapper">
     
                     <div class="choice__img choice__img_left">
                         <img src="img/bbb.png" alt="">
@@ -1599,7 +1618,7 @@
                     </div> 
                 </div>
     
-                <div class="choice__wrapper animate__animated wow animate__slideInRight" data-wow-duration="1s" data-wow-offset="200">
+                <div class="choice__wrapper">
     
                     <div class="choice__text">
                         <div class="choice__pic">
@@ -1632,10 +1651,10 @@
                 О нас
             </h2>
             <div class="about__wrapper">
-                <div class="about__img animate__animated wow animate__slideInLeft" data-wow-duration="1s" data-wow-offset="200">
+                <div class="about__img">
                     <img src="img/bbb.png" alt="">
                 </div>
-                <div class="about__text animate__animated wow animate__slideInRight" data-wow-duration="1s" data-wow-offset="200">
+                <div class="about__text">
                     <div class="about__pic">
                         <img src="img/teapot.svg" alt="cup" class="about__pic-inner">
                     </div>
@@ -1664,7 +1683,7 @@
         </div>
     </section>
 
-    <section class="consultation animate__animated wow animate__zoomInDown" data-wow-duration="1s" data-wow-offset="200" id="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <div class="consultation__divider consultation__divider_one"></div>
             <div class="consultation__wrapper">
