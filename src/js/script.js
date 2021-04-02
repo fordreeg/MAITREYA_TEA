@@ -178,12 +178,18 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
-
-    //Библиотека анимаций
-    let wow = new WOW(
-        {
-            mobile: false      // default
-        }
-      );
-    wow.init();
 });
+
+const acc = document.getElementsByClassName("choice__more");
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        // this.classList.toggle("active");
+        let hidden = this.previousElementSibling;
+        if (hidden.style.display === "block") {
+            hidden.style.display = "none";
+        } else {
+            hidden.style.display = "block";
+        }
+    });
+}
