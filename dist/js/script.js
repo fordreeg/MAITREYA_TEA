@@ -121,7 +121,7 @@ $(document).ready(function(){
 
     //Модальное окно
     $('.modal__close').on('click', function() {
-        $('.modal').fadeOut('slow');
+        $('.overlay, .modal').fadeOut('slow');
         document.body.style.overflow = '';
     });
 
@@ -170,7 +170,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('.modal').fadeIn('slow');
+            $('.overlay, .modal').fadeIn('slow');
             document.body.style.overflow = 'hidden';
             $('form').trigger('reset');
         });
