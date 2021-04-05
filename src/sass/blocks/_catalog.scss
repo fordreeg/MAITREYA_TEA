@@ -1,27 +1,8 @@
 .catalog {
-    padding: 35px 0;
-    &__title {
-        margin-top: 70px;
-        position: relative;
-        display: block;
-        padding: 10px;
-        text-align: center;
-        @include font (33, 600, #fff);
-        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-        &::after {
-            @extend %cub;
-            right: 28%;
-        }
-        &::before {
-            @extend %cub;
-            left: 28%;
-        }
-    }
+    padding: 90px 0 20px 0;
     &-header {
         position: relative;
-        margin-top: 30px;
+        margin: 30px 0 0 10px;
         display: flex;
         justify-content: flex-start;
         z-index: 1;
@@ -143,17 +124,17 @@
             left: 50%;
             transform: translateX(calc(-50% - 19px));
             display: block;
-            padding: 5px 20px;
+            padding: 4px 20px;
             @include font (14, 500);
-            text-decoration: underline;
+            text-decoration: none;
             text-transform: uppercase;
             border-radius: 5px;
-            border: 1px solid #28282d;
-            background-color: #28282d;
+            border: 1px solid #336699;
+            background-color: #336699;
             color: #fff;
             transition: all .2s;
             &:hover {
-                color: #28282d;
+                color: #336699;
                 background-color: #fff;
                 text-decoration: none;
             }
@@ -202,16 +183,16 @@
             transform: translateX(-50%);
             padding: 5px 20px;
             @include font (12, 500);
-            text-decoration: underline;
+            text-decoration: none;
             text-align: center;
             text-transform: uppercase;
             border-radius: 5px;
-            border: 1px solid #28282d;
-            background-color: #28282d;
+            border: 1px solid #336699;
+            background-color: #336699;
             color: #fff;
             transition: all .2s;
             &:hover {
-                color: #28282d;
+                color: #336699;
                 background-color: #fff;
                 text-decoration: none;
             }

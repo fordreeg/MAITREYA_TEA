@@ -14,7 +14,21 @@ $(document).ready(function(){
     document.body.style.overflow = '';
     });
 
+    //Кнопки "Подробнее"
 
+    const btnMore = document.getElementsByClassName("choice__more");
+
+    for (let i = 0; i < btnMore.length; i++) {
+        btnMore[i].addEventListener("click", function() {
+            // let hidden = this.previousElementSibling;
+            let hidden = document.querySelector('.choice__hidden');
+            if (hidden.style.display === "block") {
+                hidden.style.display = "none";
+            } else {
+                hidden.style.display = "block";
+            }
+        });
+    }
     // Табы 
     $('div.catalog-header').on('click', 'div:not(.catalog-header__btn_active)', function() {
         $(this)
@@ -164,32 +178,4 @@ $(document).ready(function(){
         return false;
     });
 
-    //Скролл
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
-            $('.pageup').fadeIn();
-        } else {
-            $('.pageup').fadeOut();
-        }
-    });
-
-    $("a[href^='#up']").click(function(){
-        const _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-        return false;
-    });
 });
-
-const acc = document.getElementsByClassName("choice__more");
-
-for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        // this.classList.toggle("active");
-        let hidden = this.previousElementSibling;
-        if (hidden.style.display === "block") {
-            hidden.style.display = "none";
-        } else {
-            hidden.style.display = "block";
-        }
-    });
-}

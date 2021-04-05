@@ -37,15 +37,6 @@
         }
     }
     .catalog {
-        &__title {
-            margin-left: 30px;
-            &::before {
-                left: 37%;
-            }
-            &::after {
-                right: 37%;
-            }
-        }
         &__wrapper {
             width: 55%;
             margin: 10px auto 0 135px;
@@ -69,7 +60,7 @@
             }
         }
         &__descr {
-            text-align: center;
+            text-align: left;
             font-size: 14px;
         }
         &__wrapper {
@@ -142,6 +133,10 @@
         }
         &__policy {
             width: 417px;
+            font-size: 14px;
+            &-link {
+                font-size: 14px;
+            }
         }
         #checkbox-error {
             top: 24px;
@@ -270,20 +265,10 @@
             margin-top: 60px;
         }
         &__descr {
-            text-align: center;
+            text-align: left;
         }
     }
     .catalog {
-        &__title {
-            font-size: 35px;
-            margin-left: 0;
-            &:before {
-                left: 40%;
-            }
-            &:after {
-                right: 40%;
-            }
-        }
         &__header {
             justify-content: center;
             &-btn {
@@ -384,16 +369,7 @@
         }
     }
     .catalog {
-        padding: 60px 0 20px 0;
-        &__title {
-            font-size: 35px;
-            &::before {
-                left: 41%;
-            }
-            &::after {
-                right: 41%;
-            }
-        }
+        padding: 90px 0 20px 0;
         &__wrapper {
             margin: 30px auto 0 140px;
             width: 69%;
@@ -694,20 +670,13 @@
         right: 15px;
     }
     .catalog {
-        &__title {
-            &:before {
-                left: 42%;
-            }
-            &:after {
-                right: 42%;
-            }
-        }
         &__wrapper {
             margin: 30px auto 0 53px;
             width: 91%;
         }
         &-header {
             justify-content: flex-start;
+            margin: 50px 0 0 50px;
         }
     }
 }
@@ -738,17 +707,12 @@
         }
     }
     .catalog {
-        &__title {
-            &::before {
-                left: 44%;
-            }
-            &::after {
-                right: 44%;
-            }
-        }
         &__wrapper {
             width: 1179px;
             margin: 30px auto 0 10px;
+        }
+        &-header {
+            margin: 50px 0 0 10px;
         }
     }
     .choice {
