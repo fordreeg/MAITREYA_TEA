@@ -43,11 +43,19 @@
         padding: 10px;
         @include font (17, 600, #fff);
         background-color: #1f3b47;
-        border-radius: 5px;
+        border-radius: 2px;
         text-transform: uppercase;
         cursor: pointer;
         transition: .3s;
         border: none;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #1f3b47;
+        box-sizing: border-box;
+        background-position: 0 0, 0 100% ;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+      
+        background-image: linear-gradient(to right, #fff 50%, #1f3b47 0%), linear-gradient(to right, #fff 0%, #1f3b47 100%);
         &:focus {
             outline: none;
         }

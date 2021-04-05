@@ -20,12 +20,11 @@ $(document).ready(function(){
 
     for (let i = 0; i < btnMore.length; i++) {
         btnMore[i].addEventListener("click", function() {
-            // let hidden = this.previousElementSibling;
-            let hidden = document.querySelector('.choice__hidden');
-            if (hidden.style.display === "block") {
-                hidden.style.display = "none";
+            let hidden = document.getElementsByClassName('choice__hidden');
+            if (hidden[i].style.display === "block") {
+                hidden[i].style.display = "none";
             } else {
-                hidden.style.display = "block";
+                hidden[i].style.display = "block";
             }
         });
     }
