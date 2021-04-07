@@ -65,17 +65,17 @@
         text-shadow:initial;
         transition: color .3s, background-color .3s;
 
-        border-left: 2px solid #fff;
+        border-left: 2px solid #f1f6f7;
         border-right: 2px solid #1f3b47;
         box-sizing: border-box;
         background-position: 0 0, 0 100% ;
         background-repeat: no-repeat;
         background-size: 100% 2px;
       
-        background-image: linear-gradient(to right, #fff 50%, #1f3b47 0%), linear-gradient(to right, #fff 0%, #1f3b47 70%);
+        background-image: linear-gradient(to right, #f1f6f7 50%, #1f3b47 0%), linear-gradient(to right, #f1f6f7 0%, #1f3b47 70%);
         &:hover {
             color: #1f3b47;
-            background-color: #fff;
+            background-color: #f1f6f7;
         }
     }
     &__list {

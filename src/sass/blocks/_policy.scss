@@ -1,30 +1,30 @@
 .policy {
-    background-color: rgb(31, 29, 29);
+    background-color: #eee;
     padding-top: 50px;
     &__wrapper {
         margin: 0 auto;
-        padding: 30px 30px;
-        width: 55%;
+        padding: 10px 10px;
+        width: 90%;
         background-color: #fff;
         border-radius: 10px;
         
     }
     &__border {
-        border: 3px solid rgba(0, 0, 0, 0.2);
+        border: 3px solid rgba(0, 0, 0, .5);
         padding: 15px 15px;
     }
     h1 {
-        font-size: 25px;
+        font-size: 14px;
         font-weight: 700;
         margin-bottom: 30px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 14px;
     }
     p {
         margin: 20px 0 20px 0;
-        padding: 0 20px 0 40px;
-        line-height: 30px;
+        padding: 0px 0px 0 14px;
+        line-height: 23px;
         font-size: 13px;
     }
 }
