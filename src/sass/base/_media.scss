@@ -119,6 +119,13 @@
             width: 400px;
             margin: 0 auto;
         }
+        .modal {
+            width: 311px;
+            height: 100px;
+            &__subtitle {
+                margin-top: 10px;
+            }
+        }
     }
     .contacts {
         padding: 30px 0 10px 0;
@@ -145,6 +152,11 @@
         }
         &__icon {
             font-size: 25px;
+        }
+    }
+    .rights {
+        &__item {
+            @include font (15, 500, #fff);
         }
     }
 }
@@ -405,9 +417,9 @@
         }
         .modal {
             width: 450px;
-            height: 250px;
+            height: 155px;
             &__subtitle {
-                margin-top: 80px;
+                margin-top: 42px;
                 font-size: 29px;
             }
             &__descr {
@@ -553,10 +565,10 @@
             width: 950px;
         }
         .modal {
-            width: 550px;
-            height: 300px;
+            width: 590px;
+            height: 200px;
             &__subtitle {
-                margin-top: 90px;
+                margin-top: 65px;
                 font-size: 32px;
             }
             &__descr {
@@ -628,10 +640,10 @@
             width: 1180px;
         }
         .modal {
-            width: 650px;
-            height: 350px;
+            width: 590px;
+            height: 200px;
             &__subtitle {
-                margin-top: 110px;
+                margin-top: 65px;
                 font-size: 32px;
             }
             &__descr {

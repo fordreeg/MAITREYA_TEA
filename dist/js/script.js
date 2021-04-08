@@ -119,7 +119,7 @@ $(document).ready(function(){
         toggleSlide('.catalog-item__back');
     });
 
-    //Модальное окно
+    // Модальное окно
     $('.modal__close').on('click', function() {
         $('.overlay, .modal').fadeOut('slow');
         document.body.style.overflow = '';

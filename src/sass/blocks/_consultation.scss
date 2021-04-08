@@ -176,8 +176,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 290px;
-    height: 200px;
+    width: 250px;
+    height: 130px;
     background-color: rgba(0, 0, 0, .9);
     padding: 15px 15px 15px 15px;
     z-index: 3;
@@ -196,9 +196,9 @@
         cursor: pointer;
     }
     &__subtitle {
-        margin-top: 55px;
+        margin-top: 32px;
         color: #fff;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 700;
         text-align: center;
     }
