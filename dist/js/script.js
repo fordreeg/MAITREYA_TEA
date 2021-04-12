@@ -172,7 +172,7 @@ $(document).ready(function(){
             $(this).find("input").val("");
             // $('.overlay, .modal').fadeIn('slow');
             // document.body.style.overflow = 'hidden';
-            document.location.href = "thanks.html";
+            window.open('/thanks.html','_blank'); 
             $('form').trigger('reset');
         });
         return false;
